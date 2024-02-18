@@ -2,6 +2,7 @@
 
 import { useChat } from "ai/react";
 import clsx from "clsx";
+import toast from "react-hot-toast";
 
 import Button from "@/components/common/button";
 import Card from "@/components/common/card";
@@ -9,8 +10,14 @@ import CardTitle from "@/components/common/card-title";
 import TextField from "@/components/forms/text-field";
 
 export default function HomePageView() {
-  const { messages, input, handleInputChange, handleSubmit, isLoading } =
+  const { messages, input, handleInputChange, handleSubmit, isLoading, error } =
     useChat();
+
+  if (error) {
+    const message = error.message;
+    toast.error("Error when chatting with OpenAI", { id: message });
+    console.error(error);
+  }
 
   return (
     <main className="grid h-screen w-screen place-items-center">
