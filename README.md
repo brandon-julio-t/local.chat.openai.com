@@ -1,6 +1,36 @@
 ## Why?
 
-Want to use Chat GPT-4 but don't want to pay subscription price of $20 per month? You can use this simple chat UI web app as chat interface to Chat GPT-4. You just need to create your own API key from OpenAI at http://platform.openai.com/.
+1. You want to use Chat GPT-4 but don't want to pay subscription price of $20 per month.
+2. There are free available online tools, but cannot see the source code and you don't trust them.
+3. You are paranoid about online free service and prefer to self-host things on your own.
+
+You can use this simple chat UI web app as chat interface to Chat with GPT-4 model. You just need to create your own API key from OpenAI at https://platform.openai.com/api-keys and then self-host the app on your own server.
+
+## Getting Started
+
+1. Create API key from https://platform.openai.com/api-keys
+
+![step 1](./docs/1.%20create-api-keys.png)
+
+2. Copy `.env.example` into `.env.local`
+3. Paste your API key into `OPENAI_API_KEY` in `.env.local`
+
+![step 2](./docs/2.%20setup-env.png)
+
+4. Open terminal and run these commands
+
+```bash
+npm run install
+npm run build
+npm run start
+```
+
+5. You should see the following output in your terminal
+
+![step 3](./docs/3.%20start-server.png)
+
+6. Visit `http://localhost:3000` in your browser
+7. Start chatting
 
 ---
 
