@@ -1,3 +1,9 @@
+## Why?
+
+Want to use Chat GPT-4 but don't want to pay subscription price of $20 per month? You can use this simple chat UI web app as chat interface to Chat GPT-4. You just need to create your own API key from OpenAI at http://platform.openai.com/.
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
